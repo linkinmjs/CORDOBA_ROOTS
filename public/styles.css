@@ -1,0 +1,9 @@
+body {
+    background-image: url("imagenes/background.jpg");
+    background-color: red;
+}
+#body {
+	background-color: red;
+	background-image: url("imagenes/background.jpg")
+}
+
