@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Auth;
-use App\User;
+use App\Usuario;
 
 class AuthController extends Controller
 {
@@ -30,7 +30,7 @@ class AuthController extends Controller
 		$this->validate($request, $this->rules);
 
 		if (Auth::attempt([
-			'email'=>$request->get('correo'),
+			'correo'=>$request->get('correo'),
 			'password'=>$request->get('contraseña')
 			]))
 		{
@@ -54,22 +54,22 @@ class AuthController extends Controller
 
 		$this->validate($request, [
 
-			'name'=>'required|max:100',
-			'email'=>'required|email|unique:users',
+			'nombre'=>'required|max:100',
+			'correo'=>'required|email|unique:usuarios',
 			'password'=>'required|min:6|confirmed',
 			'password_confirmation'=>'required|min:6'
 
 			]);
 
-		User::create([
-			'name'=>$request->get('name'),
-			'email'=>$request->get('email'),
+		Usuario::create([
+			'nombre'=>$request->get('nombre'),
+			'correo'=>$request->get('correo'),
 			'password' => bcrypt($request->get('password'))
 			]);
 
 
 		
-		return redirect('ingreso')->with('correo', $request->get('email'));
+		return redirect('ingreso')->with('correo', $request->get('correo'));
 
 	}
 

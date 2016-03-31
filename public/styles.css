@@ -1,9 +1,13 @@
 body {
-    background-image: url("imagenes/background.jpg");
-    background-color: red;
-}
-#body {
-	background-color: red;
-	background-image: url("imagenes/background.jpg")
+    background-image: url("imagenes/cosa.jpg");
+    background-position: left;
+    background-repeat: repeat-y;
+    
+    }
+textarea {
+	resize: vertical;
 }
 
+#main-jumbo {
+	background-color: rgb(237,255,033);
+}

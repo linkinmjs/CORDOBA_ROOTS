@@ -5,18 +5,28 @@
         <link href="bootstrap/css/bootstrap.min.css" rel='stylesheet' type='text/css'/>
         <script src="bootstrap/js/jquery.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="estilosJquery.js"></script>
-        <!-- <link href="estilos.css" rel='stylesheet' type='text/css'/> -->
+
+        <!-- jquery ui -->
+        <link rel="stylesheet" href="{{ URL::asset('jquery-ui/jquery-ui.min.css') }}">
+        <script src="jquery-ui/jquery-ui.min.js"></script>
+
+        <!-- datepicker -->
+        <link rel="stylesheet" href="{{ URL::asset('datepicker/jquery-ui-timepicker-addon.css') }}"/>
+        <script src="datepicker/jquery-ui-timepicker-addon.js"></script>
+
+        <!-- styles -->
         <link rel="stylesheet" href="{{ URL::asset('styles.css') }}">
+
+
     </head>
 
     <body>
-        <div id="body"></div>
+    
+        @yield('navbar')
 
-            @yield('navbar')
+        @yield('contenido')
 
-            @yield('contenido')
-
-        
+        <script src="estilosJquery.js"></script>        
+    
     </body>
 </html>

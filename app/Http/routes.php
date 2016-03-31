@@ -13,6 +13,9 @@
 		Route::get('/registro', 'AuthController@getRegistro');
 		Route::post('/registro', 'AuthController@postRegistro');
 		Route::get('/desloguear', 'AuthController@getDesloguear');
+
+		Route::resource('/eventos', 'EventoController');
+
 	});
 
 
