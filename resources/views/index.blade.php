@@ -2,14 +2,18 @@
 
 @section('contenido')
 
+<!-- 
+	columna noticias
+ -->
 	<div class="row">
-		<div class="col-xs-2">
+		<div class="col-md-2">
 		    @for ($i=0; $i<50; $i++)    
 		    <h2>hola soy noticia</h2>
 			@endfor
 		</div>
 
-		<div class="col-xs-6 col-offset-xs-1">
+
+		<div class="col-md-6 col-offset-xs-1">
             <h1>Hola soy un contenido</h1>
             @if(!Auth::check()) 
             	 <h2>-- Nadie conectado --</h2>

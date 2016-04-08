@@ -2,12 +2,26 @@ body {
     background-image: url("imagenes/cosa.jpg");
     background-position: left;
     background-repeat: repeat-y;
-    
-    }
+}
 textarea {
 	resize: vertical;
 }
 
 #main-jumbo {
-	background-color: rgb(237,255,033);
+	background-color: rgb(255, 255, 51);
+	padding-left: 11%;
+
+	border-radius: 50px 150px;
+
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #b1ff2a;
+
+    border-bottom-style: solid;
+    border-bottom-width: 0.1px;
+	border-bottom-color: #b1ff2a;
+
+    border-top-style: solid;
+    border-top-width: 2px;
+	border-top-color: #ffffbb;
 }

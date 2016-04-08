@@ -38,11 +38,11 @@
 
                     @endif
 
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+                </div>
+            </div>
         </nav>
 
-        <!-- Jumbotron -->
+        <!-- Jumbotron CORDOBA ROOTS-->
         <div class="jumbotron" id="main-jumbo">
             <h1>CÓRDOBA ROOTS</h1>
             <p>Apoyando el reggae de córdoba...</p>
